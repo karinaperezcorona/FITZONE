@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h6 {
+    color: #A1DB62;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+h5 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.planes-container {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.planes-container h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 45px;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: #050505;
+    border: 1px solid #1a3a10;
+    border-radius: 20px;
+    width: 290px;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.plan-card.destacado {
+    border: 2px solid #a1db62;
+    box-shadow: 0 0 20px rgba(161, 219, 98, 0.15);
+    transform: scale(1.03);
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    background-color: #a1db62;
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.7rem;
+    padding: 5px 18px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+.plan-card h3 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.precio {
+    color: #ffffff;
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.precio span {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #999999;
+}
+
+.beneficios {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.beneficios li {
+    color: #ffffff;
+    font-size: 0.88rem;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-suscribirse {
+    background-color: #a1db62;
+    color: #000000;
+    border: none;
+    width: 85%;
+    padding: 11px 0;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn-suscribirse:hover {
+    background-color: #39ff14;
+    transform: translateY(-2px);
+}
+
+.faq-container {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.faq-container h2 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.faq-list {
+    background-color: #121212;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #222222;
+}
+
+.faq-item {
+    border-bottom: 1px solid #222222;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item summary {
+    color: #dcdcdc;
+    padding: 20px 25px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "›";
+    font-size: 1.2rem;
+    color: #888888;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(90deg);
+    color: #a1db62;
+}
+
+.faq-item p {
+    color: #aaaaaa;
+    padding: 0 25px 20px 25px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #000000;
+    border-top: 1px solid #11220a;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo img {
+    width: 32px;
+}
+
+.footer-autor {
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 500;
+}
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-redes a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+    color: #39FF14;
+}
+
+.footer-redes span {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+}

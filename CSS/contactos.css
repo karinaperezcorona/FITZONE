@@ -1,0 +1,279 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h6 {
+    color: #A1DB62;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+h5 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+    width: 100%;
+}
+
+
+.contacto-header {
+    margin-bottom: 45px;
+}
+
+.contacto-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contacto-header p {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 80px;
+}
+
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.icon-box {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box svg {
+    width: 34px;
+    height: 34px;
+}
+
+.info-text h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.info-text p {
+    font-size: 0.88rem;
+    color: #b8b8b8;
+    line-height: 1.4;
+}
+
+.info-text .sub-label {
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+
+.formulario-card {
+    background-color: #121212;
+    border: 1px solid #222222;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background-color: #1c1c1c;
+    border: 1px solid #2d2d2d;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666666;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #a1db62;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.btn-enviar {
+    background-color: #a1db62;
+    color: #000000;
+    border: none;
+    width: 100%;
+    padding: 13px 0;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #39ff14;
+    transform: translateY(-2px);
+}
+
+
+.empezar-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.media-frame img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #1a3a10;
+}
+
+.empezar-content h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.text-green {
+    color: #a1db62;
+}
+
+.btn-empezar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #a1db62;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-empezar:hover {
+    background-color: #39ff14;
+    transform: translateY(-2px);
+}
+
+.check-icon {
+    font-weight: 900;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #000000;
+    border-top: 1px solid #11220a;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo img {
+    width: 32px;
+}
+
+.footer-autor {
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 500;
+}
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-redes a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.footer-redes a:hover {
+    color: #39FF14;
+}
+
+.footer-redes span {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .contacto-grid,
+    .empezar-section {
+        grid-template-columns: 1fr;
+    }
+}

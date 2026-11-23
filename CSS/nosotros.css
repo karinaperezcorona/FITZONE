@@ -1,0 +1,257 @@
+
+:root {
+  --bg-color: #030303;
+  --primary-green: #72ef36;
+  --border-green: #1f3b11;
+  --text-white: #ffffff;
+  --text-gray: #bbbbbb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-white);
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-green);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-container img {
+  height: 24px;
+}
+
+.logo-container h6, 
+.logo-container h5 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo-container h6 {
+  color: var(--text-white);
+}
+
+.logo-container h5 {
+  color: var(--primary-green);
+}
+
+
+.profile-link img {
+  width: 28px;
+  height: 28px;
+}
+
+.hero-header {
+  height: 240px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), 
+              url('../imagenes/nosotros.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  border-bottom: 1px solid var(--border-green);
+}
+
+.hero-header h1 {
+  color: var(--primary-green);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--border-green);
+}
+
+/* 1. SECCIÓN HISTORIA */
+.section-history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.content-block h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+
+.content-block p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.media-frame {
+  margin: 0;
+}
+
+.media-frame img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--primary-green);
+  box-shadow: 0 0 15px rgba(114, 239, 54, 0.12);
+}
+
+.section-mission-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.info-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.icon-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 48px;
+  height: 48px;
+}
+
+.text-group h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.text-group p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.section-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.banner-text h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: var(--primary-green);
+}
+
+@media (max-width: 768px) {
+  .site-header nav ul {
+    display: none; 
+  }
+
+  .section-history, 
+  .section-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hero-header {
+    padding: 0 2rem;
+  }
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #000000;
+    border-top: 1px solid #1a1a1a;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo img {
+    width: 35px;
+}
+
+.footer-autor {
+    font-size: 0.85rem;
+    color: #b0b0b0;
+    font-weight: 500;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-redes a:hover {
+    color: #39FF14;
+    transform: scale(1.1);
+}
+h5 {
+    color: #72EF36;
+    font-size: 1.2rem;
+}
+
+h6 {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+ 

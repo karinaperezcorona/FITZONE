@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FITZONE - Iniciar Sesión</title>
+    <link rel="stylesheet" href="CSS/miEstilo.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+
+    <a href="index.html" class="btn-volver" title="Volver al inicio" aria-label="Volver al inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+    </a>
+
+    <div class="esquina-superior"></div>
+
+    <div class="login-container">
+        
+        <div class="login-logo">
+            <img src="images/logo.svg" alt="FITZONE Logo">
+            <h1>FIT<span>ZONE</span></h1>
+        </div>
+
+        <h2>INICIAR SESIÓN</h2>
+
+        <div style="background: rgba(57, 255, 20, 0.08); border: 1px solid #39FF14; border-radius: 8px; padding: 12px; margin-bottom: 18px; font-size: 0.82rem; text-align: center; color: #ffffff; line-height: 1.6;">
+            <strong>Correos de prueba:</strong><br>
+            <strong>Cliente:</strong> cliente@fitzone.com<br>
+            <strong>Entrenador:</strong> entrenador@fitzone.com<br>
+            <strong>Admin:</strong> admin@fitzone.com<br>
+            Clave para todos: <strong style="color: #39FF14;">123</strong>
+        </div>
+
+        <form class="login-form">
+            <div class="input-grupo">
+                <span class="icono">✉</span>
+                <input type="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="input-grupo">
+                <span class="icono">🔒</span>
+                <input type="password" placeholder="Contraseña" required>
+            </div>
+
+            <div class="recuperar-link">
+                <a href="crearCuenta.html">¿No tiene cuenta?</a>
+            </div>
+
+            <a href="perfil.html" class="btn-neon btn-link">Iniciar Sesión</a>
+        </form>
+        <div class="social-login">
+            <a href="iniciarSesion.html" class="social-icon">G</a>
+            <a href="iniciarSesion.html" class="social-icon">f</a>
+        </div>
+    </div>
+    <div class="esquina-inferior"></div>
+
+    <script src="js/miJS.js"></script>
+</body>
+</html>
